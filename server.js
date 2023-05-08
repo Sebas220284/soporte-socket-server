@@ -7,7 +7,8 @@ const http=require('http')
 
 const server= http.createServer()
 
-port = process.env.PORT || 8000;
+const port = process.env.PORT || 4001;
+
 const io=require('socket.io')(server,{
     cors:{origin:'*'}
 })
